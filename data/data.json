@@ -1,0 +1,21 @@
+{
+  "roles": {
+    "admin": [
+      {"action": "read", "resource": "*"},
+      {"action": "write", "resource": "*"},
+      {"action": "delete", "resource": "*"}
+    ],
+    "editor": [
+      {"action": "read", "resource": "*"},
+      {"action": "write", "resource": "document"},
+      {"action": "write", "resource": "report"}
+    ],
+    "viewer": [
+      {"action": "read", "resource": "*"}
+    ],
+    "employee": [
+      {"action": "read", "resource": "document"},
+      {"action": "read", "resource": "report"}
+    ]
+  }
+}
